@@ -1,4 +1,5 @@
 import styles from "./Post.module.css";
+
 export function Post() {
   return (
     <article className={styles.post}>
@@ -24,6 +25,6 @@ export function Post() {
         <p>É um projeto que fiz para treinar React </p>
         <p><a href="">#novoprojeto</a></p>
       </div>
-    </article>
+     </article>
   );
 }
