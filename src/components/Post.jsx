@@ -3,6 +3,8 @@ import styles from "./Post.module.css";
 export function Post() {
   return (
     <article className={styles.post}>
+
+      {/* cabeçalho */}
       <header>
         <div className={styles.author}>
           <img
@@ -18,13 +20,32 @@ export function Post() {
           Publicado há uma hora
         </time>
       </header>
+
+      {/* conteúdo do post */}
       <div className={styles.content}>
         <p> Fala Galera! .</p>
         <p>Acabei de subir um projeto no meu portifolio.</p>
-        <p><a href="">jane.design/doctorcare</a></p>
+        <p><a href="">ari.design/doctorcare</a></p>
         <p>É um projeto que fiz para treinar React </p>
-        <p><a href="">#novoprojeto</a></p>
+        <p>
+          <a href="">#novoprojeto</a>{' '}
+          <a href="">#ARI</a>{' '}
+          <a href="">#Minhaprópiapágina</a>{' '}
+        </p>
       </div>
+
+      {/* comentários */}
+      <form className={styles.comentForm}>
+        <strong>Deixe o seu feedBack</strong>
+        <textarea
+        placeholder="Deixe um Comentário"
+        />
+
+        <footer>
+        <button type="submit">Publicar</button>
+        </footer>
+
+      </form>
      </article>
   );
 }
