@@ -47,7 +47,7 @@ color: var(--gray-400);
 
 .author{
   display: flex;
-  align-itens: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -102,7 +102,7 @@ color: var(--gray-400);
   resize: none;
   height: 6rem;
   padding: 1rem;
-  /* border-radius: 8px; */
+  border-radius: 8px;
   color: var(--gray-100);
   line-height: 1.4;
   margin-top: 1rem;
@@ -114,7 +114,7 @@ color: var(--gray-400);
 
 }
 .comentForm:focus-within footer{
-  visibility: vivible;
+  visibility: visible;
   max-height: none;
 
 }
@@ -137,4 +137,8 @@ color: var(--gray-400);
 .comentForm button[type=submit]:hover{
   background: var(--green-300);
 
+}
+
+.commentList{
+  margin-top: 2rem;
 }
