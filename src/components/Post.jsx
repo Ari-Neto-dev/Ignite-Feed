@@ -1,3 +1,4 @@
+import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 
@@ -8,9 +9,7 @@ export function Post() {
       {/* cabeçalho */}
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
-            src="https://github.com/ari-neto-dev.png"
+          <Avatar src="https://github.com/ari-neto-dev.png"
           />
           <div className={styles.authorInfo}>
             <strong>Ariosvaldo de Azevedo Neto</strong>
